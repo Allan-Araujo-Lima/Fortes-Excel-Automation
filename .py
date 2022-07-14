@@ -13,20 +13,20 @@ import time
 '''Monitor resolution: 1920 x 1080 (you've to chance the mouse atributes'''
 '''time.sleep can chance in diferents computer and/or in diferents campanys.'''
 
-pyautogui.alert('Minimize o VSCode e o centralize em modo janela na tela do computador')
+pyautogui.alert('Minimize o VSCode e o centralize em modo janela na tela do computador') '''Minimize the (system that you use) in the middle of scream'''
 confirmation = pyautogui.confirm(
-text='Antes de iniciar o código, abra a direita do computador a planilha de ocorrências e a esquerda o Fortes.', 
-title='Confirmação de execução.')
+text='Antes de iniciar o código, abra a direita do computador a planilha de ocorrências e a esquerda o Fortes.', '''before the code start's, in the right open the excel and in the left open the Fortes'''
+title='Confirmação de execução.') '''Execution confirmation'''
 pyautogui.PAUSE = (0.1)
 
-competência = ('062022')
+competência = ('062022') '''show the month of payment'''
 
 if (confirmation == 'OK'):
-    pyautogui.alert('O código vai iniciar, não mexa no computador')
+    pyautogui.alert('O código vai iniciar, não mexa no computador') '''the code will start, don't touch in your pc'''
 else: exit()
 pyautogui.click(x=272, y=129)
 pyautogui.press('enter')
-pyautogui.write(competência)
+pyautogui.write(competência) '''take the date on the line 22'''
 for x in range (12):
     pyautogui.press('enter')
     time.sleep(0.1)
